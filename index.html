@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de mes rêves</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="success.html" method="POST" id="myForm">
+
+        <label for="username">Pseudo :</label>
+        <input type="text" name="username" id="username">
+
+        <label for="mail">Mail : </label>
+        <input type="text" name="mail" id="mail">
+
+        <div class="marge"></div>
+
+        <label for="datenaiss">Date de naissance :</label>
+        <input type="text" name="datenaiss" id="datenaiss" placeholder="JJ/MM/AAAA" >
+
+        <div class="marge"></div>
+        
+        <label for="datenaiss">Numéro de téléphone : </label>
+        <input type="text" name="num" id="num">
+
+        <div class="marge"></div>
+
+        <label for="zone">Regex :</label>
+        <input type="text" name="zone" id="zone">
+        <div class="marge"></div>
+        <textarea class="marge" name="zoneJeu" id="zoneJeu" cols="30" rows="10" onkeyup="TestRegex()"></textarea>
+
+        <button type="submit">Envoyer</button>
+        <img src="img/bierre.jpeg" width="30%" id="victory" alt="">
+        <span class="marge" id="error"></span>
+        <span class="marge" id="Jeu"></span>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
