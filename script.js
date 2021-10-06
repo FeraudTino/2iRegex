@@ -11,7 +11,7 @@ myForm.addEventListener("submit" ,function(e){
     let myRegExpMail = /^[\S]{1,56}@(\w){1,67}.[A-Za-z]{2,3}$/;
 
     let myInputDateNaiss = document.getElementById("datenaiss");
-    let myRegExDateNaiss = /^[0-3][0-9]\/[0-1][0-9]\/([0-9]){4}$/;
+    let myRegExDateNaiss = /^(0[1-9]|[12][0-9]|3[01])\/(0[0-9]|1[0-2])\/(19\d\d|20[01][0-9]|2[01])$/;
 
     let myIntputNum = document.getElementById("num");
     let myRegExNum = /^0[67]( ?\d){8}$/;
